@@ -1,11 +1,17 @@
 import { sum } from './01-sum';
 
+// data
+let a: number;
+let b: number;
+
+beforeEach(() => {
+  a = 5;
+  b = 2;
+});
+
 test('sun should be correct', () => {
-  // data
-  const a = 1;
-  const b = 2;
   // action
   const result = sum(a, b);
   // expectation
-  expect(result).toBe(3);
+  expect(result).toBe(7);
 });
